@@ -1,12 +1,12 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 
 // ─── Constants ────────────────────────────────────────────────────────────────
-const TODAY = new Date("2026-04-22T11:53:59-10:00");
+const TODAY = new Date();
 const DAY_NAMES = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 const MONTH_NAMES = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 const DAY_NAME = DAY_NAMES[TODAY.getDay()];
 const IS_DANCE_DAY = [2,4,6].includes(TODAY.getDay());
-const TODAY_STR = "2026-04-22";
+const TODAY_STR = `${TODAY.getFullYear()}-${String(TODAY.getMonth()+1).padStart(2,"0")}-${String(TODAY.getDate()).padStart(2,"0")}`;
 
 const P = {
   forMe:{bg:"#FFF0F0",border:"#F87171",label:"#991B1B"},
