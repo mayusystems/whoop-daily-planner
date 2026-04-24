@@ -9,10 +9,10 @@ const IS_DANCE_DAY = [2,4,6].includes(TODAY.getDay());
 const TODAY_STR = `${TODAY.getFullYear()}-${String(TODAY.getMonth()+1).padStart(2,"0")}-${String(TODAY.getDate()).padStart(2,"0")}`;
 
 const P = {
-  forMe:{bg:"#FFF0F0",border:"#F87171",label:"#991B1B"},
-  deep:{bg:"#EFF6FF",border:"#60A5FA",label:"#1E40AF"},
-  admin:{bg:"#FFFDE7",border:"#FACC15",label:"#854D0E"},
-  play:{bg:"#F5F0FF",border:"#A78BFA",label:"#5B21B6"},
+  forMe:{bg:"#FFFDE7",border:"#F59E0B",labelColor:"#92400E"},
+  deep:{bg:"#EFF6FF",border:"#60A5FA",labelColor:"#1E40AF"},
+  admin:{bg:"#FFF7ED",border:"#F97316",labelColor:"#9A3412"},
+  play:{bg:"#F5F0FF",border:"#A78BFA",labelColor:"#5B21B6"},
   dark:"#0F0F1A",red:"#E53935",cream:"#FFFDF7",
 };
 
@@ -20,9 +20,9 @@ const DEFAULT_SLOTS={6:"",7:"💪 Workout",8:"🪥 Get ready + breakfast",9:"",1
 
 const SESSIONS=[
   {id:"forMe",label:"My Mornings",hours:[6,7,8,9],...P.forMe},
-  {id:"deep",label:"Focus Block",hours:[10,11,12,13],...P.deep},
+  {id:"deep",label:"Deep Focus",hours:[10,11,12,13],...P.deep},
   {id:"admin",label:"Admin",hours:[14,15,16,17],...P.admin},
-  {id:"play",label:"Fun",hours:[18,19,20,21,22,23],...P.play},
+  {id:"play",label:"Fun, Chill, Creative",hours:[18,19,20,21,22,23],...P.play},
 ];
 
 const PILLARS=[
