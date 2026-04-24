@@ -28,9 +28,12 @@ const SESSIONS=[
 const PILLARS=[
   {id:"hwit",label:"🌺 HWIT",color:"#EFF6FF",border:"#60A5FA",tasks:[
     {id:"h1",text:"🔄 Renew HWIT Slack Business+ (trial ends Apr 24)",urgency:"today"},
-    {id:"h2",text:"📋 Review & update HWIT Operational Accounts doc",urgency:"week"},
+    {id:"h2",text:"📋 Review & update HWIT Operational Accounts doc — add missing accounts",urgency:"week"},
     {id:"h3",text:"📝 Review HWIT Board Meeting notes (Apr 14)",urgency:"week"},
     {id:"h4",text:"💬 Log into new HWIT Slack ecosystem",urgency:"week"},
+    {id:"h5",text:"👤 Add Jenn + Tiffany as admins in HWIT Operational Accounts doc",urgency:"week"},
+    {id:"h6",text:"📹 Check with Board: replace Zoom with Google Meet?",urgency:"week"},
+    {id:"h7",text:"📱 Social media access: confirm Tiffany's needs, remove Maddy from IG, add Tiffany",urgency:"week"},
   ]},
   {id:"mayu",label:"🧠 Mayu Systems",color:"#F5F0FF",border:"#A78BFA",tasks:[
     {id:"m1",text:"🏢 File Hawaii Annual Business Report",urgency:"today"},
@@ -106,6 +109,12 @@ const TODOS_DEFAULT=[
   {id:"r34",text:"✈️ Renew Global Entry",date:"2026-05-15",done:false},
   {id:"r35",text:"💰 401k transfer",date:"2026-05-15",done:false},
   {id:"r36",text:"📢 Send out Slack sunset email and remove old accounts",date:"2026-05-01",done:false},
+  // HWIT — from board thread Apr 23
+  {id:"r37",text:"📋 Update HWIT Operational Accounts doc — add missing accounts",date:"2026-04-25",done:false},
+  {id:"r38",text:"👤 Add Jenn M. + Tiffany as admins in HWIT accounts doc",date:"2026-04-25",done:false},
+  {id:"r39",text:"📹 Check with Board: Zoom vs Google Meet — any objections?",date:"2026-04-28",done:false},
+  {id:"r40",text:"📱 IG access: verify Maddy removed, get Tiffany added",date:"2026-04-25",done:false},
+  {id:"r41",text:"🔑 List all Marketing/Social accounts Tiffany needs access to",date:"2026-04-28",done:false},
 ];
 const healthColor=h=>({"on-track":"#059669","needs-attention":"#D97706","stalled":"#DC2626"})[h]||"#999";
 const urgDot=u=>u==="today"?"#EF4444":u==="week"?"#F59E0B":"#D1D5DB";
